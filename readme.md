@@ -34,3 +34,54 @@ In my opinion there are the initial main user roles of this system:
 * Clinic Admin
 * System Admin
 
+## Contribution
+
+### Setup
+
+After you clone the repo just run:
+```
+% make setup
+```
+
+How to run tests:
+
+```
+% make test
+```
+ or
+ ```
+ % make dev
+ % bundle exec rspec
+ ```
+ 
+How to run the development console:
+```
+% make console
+```
+ or
+ ```
+ % make dev
+ % bundle exec hanami console
+ ```
+
+
+How to run the development server:
+
+```
+% make up
+```
+
+How to prepare (create and migrate) DB for `development` and `test` environments:
+
+```
+% make db-prepare
+% make db-test-prepare
+```
+OR
+```
+% make dev
+
+% bundle exec hanami db prepare
+
+% HANAMI_ENV=test bundle exec hanami db prepare
+```

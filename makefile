@@ -13,6 +13,7 @@ usage:
 	@echo "  * tear-down    		  - Removes all the containers and tears down the setup"
 	@echo "  * stop         		  - Stops the server"
 	@echo "  * test         		  - Runs tests"
+	@echo "  * console         		- Fires up hanami console"
 
 # With db
 setup: build bundle db-prepare db-test-prepare
@@ -35,3 +36,6 @@ db-test-prepare:
 	$(call dc, run --rm -e HANAMI_ENV=test web bundle exec hanami db prepare)
 test:
 	$(call dc-run, bundle exec rspec)
+console:
+	$(call dc-run, bundle exec hanami console)
+
