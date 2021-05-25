@@ -1,0 +1,3 @@
+project=dbt_assistant
+test=rspec
+template=erb

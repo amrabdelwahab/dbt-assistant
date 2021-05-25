@@ -34,4 +34,3 @@ In my opinion there are the initial main user roles of this system:
 * Clinic Admin
 * System Admin
 
-
